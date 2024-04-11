@@ -15,7 +15,7 @@ public class PlayerSpells : NetworkBehaviour
         /* -------------------------- casting spells ---------------------------- */
 
         // left control or mouse left click
-        if (Input.GetButtonDown("Fire1")) {
+        if (false) {//Input.GetButtonDown("Fire1")) {
             // Debug.Log("casting spell or soemthing");
 
             initial = transform;

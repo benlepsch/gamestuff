@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Unity.Netcode;
 
-public class ProjectileMovement : MonoBehaviour
+public class ProjectileMovement : NetworkBehaviour
 {
 
     private Transform initial;
