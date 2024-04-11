@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\NetworkManagerUI.cs" />
+    <Compile Include="Assets\Scripts\ProjectileMovement.cs" />
     <Compile Include="Assets\FantasyEnvironments\Environments\Town\Scripts\Door.cs" />
     <Compile Include="Assets\Scripts\PlayerSpells.cs" />
     <Compile Include="Assets\Scripts\MouseMovement.cs" />

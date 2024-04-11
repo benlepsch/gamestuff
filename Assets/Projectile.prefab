@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8183565446012038878}
   - component: {fileID: 9011863076033821090}
   - component: {fileID: -8165595940446289265}
+  - component: {fileID: 9131064139230864705}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Untagged
@@ -118,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GlobalObjectIdHash: 0
+  GlobalObjectIdHash: 3809622408
   AlwaysReplicateAsRoot: 0
   SynchronizeTransform: 1
   ActiveSceneSynchronization: 0
@@ -126,3 +127,17 @@ MonoBehaviour:
   SpawnWithObservers: 1
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
+--- !u!114 &9131064139230864705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6639194126893412220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: beaabd8e4a8dcf94fb89d22af08552b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
+  range: 0
