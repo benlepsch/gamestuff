@@ -8,7 +8,7 @@ public class ProjectileMovement : MonoBehaviour
     private Transform initial;
 
     private float speed = 25;
-    private float range = 100;
+    private float range;
 
     // Start is called before the first frame update
     void Start()
@@ -33,9 +33,5 @@ public class ProjectileMovement : MonoBehaviour
 
         float dist = Vector3.Distance(transform.position, initial.position);
         Debug.Log("Projectil distance: " + dist);
-
-        if (dist > range) {
-            Destroy(gameObject);
-        }
     }
 }
