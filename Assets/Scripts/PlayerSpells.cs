@@ -23,7 +23,7 @@ public class PlayerSpells : NetworkBehaviour
             pp.parent = transform;
 
             Debug.Log("Spawnd projectile at " + pp.position);
-            Debug.Log("Parent (player) at " + transform.parent.position);
+            Debug.Log("Parent (player) at " + transform.position);
 
             //initial = transform.parent.position;
 
