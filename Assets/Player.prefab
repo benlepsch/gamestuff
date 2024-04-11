@@ -46,7 +46,7 @@ GameObject:
   - component: {fileID: 4411084648255167607}
   - component: {fileID: 4122935324511050038}
   - component: {fileID: 8203387189292190084}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -194,8 +194,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a577ba16eab6eb54bbfb227da605132f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   projectilePrefab: {fileID: 2688960288758357315, guid: f741967ebf72925438686522a6128541, type: 3}
+  initial: {fileID: 0}
 --- !u!1 &4320569209685410787
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,8 +6,8 @@ public class MouseMovement : MonoBehaviour
 {
     public float mouseSensitivity = 100f;
 
-    float xRotation = 0f;
-    float yRotation = 0f;
+    public float xRotation = 0f;
+    public float yRotation = 0f;
 
     // Start is called before the first frame update
     void Start()

@@ -8,7 +8,7 @@ public class ProjectileMovement : MonoBehaviour
     private Transform initial;
 
     private float speed = 25;
-    private float range;
+    private float range = 100;
 
     // Start is called before the first frame update
     void Start()
@@ -16,13 +16,18 @@ public class ProjectileMovement : MonoBehaviour
         // ---- projectile script ----
         // (start) find and save initial position + direction values
         PlayerSpells ps = (PlayerSpells) GameObject.Find(transform.parent.name).GetComponent("PlayerSpells");
-        Debug.Log("Found parent: " + ps);
+        MouseMovement mm = (MouseMovement) GameObject.Find(transform.parent.name).GetComponent("MouseMovement");
+
+        // Debug.Log("Found parent: " + ps);
         initial = ps.initial;
-        Debug.Log("Initial transform: " + initial.position + ", " + initial.rotation);
+        float xRot = mm.xRotation;
+        float yRot = mm.yRotation;
+        // Debug.Log("Initial transform: " + initial.position + ", " + initial.rotation);
+        // Debug.Log("Initial Rotation: " + initial.rotation);
         transform.parent = null;
 
         transform.position = initial.position;
-        transform.rotation = initial.rotation;
+        transform.localRotation = Quaternion.Euler(xRot, yRot/2, 0f);
     }
 
     // Update is called once per frame
@@ -32,6 +37,9 @@ public class ProjectileMovement : MonoBehaviour
         transform.Translate(transform.forward*Time.deltaTime*speed);
 
         float dist = Vector3.Distance(transform.position, initial.position);
-        Debug.Log("Projectil distance: " + dist);
+        if (dist > range) {
+            Destroy(gameObject);
+        }
+        // Debug.Log("Projectil distance: " + dist);
     }
 }
